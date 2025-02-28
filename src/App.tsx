@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./App.css";
 
 function App() {
-  const [messages, setMessage] = useState<string[]>(["hi there", "hello"]);
+  const [messages, setMessage] = useState<string[]>([]);
   const wsRef = useRef<WebSocket | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
   useEffect(() => {
